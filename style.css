@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-Serif;
+}
+
+body {
+    background: #e3edf7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-container {
+    background-image: url("progress bar.jpg");
+    height: 100vh;
+    background-size: cover;
+    width: 100vw;
+}
+
+.heading {
+    color: #bc2345;
+    font-family: "Sans-Serif";
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.container {
+    margin: auto;
+    width: 160px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-circle {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 10px 1px rgba(226, 219, 219, 0.15),
+        -6px -6px 10px -1px rgba(229, 221, 221, 0.7);
+}
+
+.inner-circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: inset 4px 4px 6px -1px rgba(243, 234, 234, 0.25),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(214, 207, 207, 0.05);
+}
+
+#number {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 165;
+    }
+}
+
+.description{
+    color: #ffffff;
+    font-size: large;
+    font-family: "Roboto";
+    text-align: center;
+    margin: 20px;
+
+}
+
+.color{
+    color:#a8e41a;
+}
+
+.button-container{
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+.button{
+    color: #10e05c;
+    background-color: transparent;
+    border-style: 2px;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    
+}
